@@ -138,6 +138,7 @@ body {
     .container-md > .destinations {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr;
+        padding: 60px 0;
     }
 
     .destination .location {
@@ -147,7 +148,7 @@ body {
     }
 
     .destination img {
-        max-height: 400px
+        max-height: none;
     }
 
     footer > .container-md {
@@ -228,7 +229,7 @@ body {
 
 .city {
     font-family: 'Dancing Script';
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 800;
 }
 
@@ -237,18 +238,30 @@ body {
     color: rgb(203, 199, 199);
 }
 
-section, footer {
-    padding: 10px;
+footer nav > a {
+    display: block;
+    color: black;
 }
 
-nav > a {
+header nav > a {
     display: block;
+    color: white;
 }
 
 footer {
     background-color: #ffc107;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-h2, h3 {
+h2 {
     padding-top: 30px;
+}
+
+#newsletter {
+    padding-top: 30px;
+}
+
+#subscribe-button {
+    margin: 0
 }
