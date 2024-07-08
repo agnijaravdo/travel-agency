@@ -1,6 +1,7 @@
 header {
     background: url('/travel-agency/images/header.jpg') center / cover no-repeat;
     height: 80vh;
+    color: white;
 }
 
 .form {
@@ -41,7 +42,6 @@ header {
 
 .input-item label {
     display: block;
-    color: white;
     margin-bottom: 5px;
     font-weight: 200;
 }
@@ -50,7 +50,6 @@ header {
     width: 100%;
     height: 40px;
     border-radius: 20px;
-    background-color: rgb(227 191 11);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,21 +116,15 @@ body {
 }
 
 #small-title {
-    color: white;
     text-transform: uppercase;
     font-size: small;
     font-weight: 600;
 }
 
 #main-title {
-    color: white;
     font-size: 4.2rem;
     text-shadow: 2px 2px rgb(84, 83, 83);
     font-weight: 600;
-}
-
-hr {
-    color: white;
 }
 
 .destinations {
@@ -141,8 +134,37 @@ hr {
     gap: 10px;
 }
 
+.destination {
+    position: relative;
+}
+
 .destination img {
     width: 100%;
+    object-fit: cover;
+    max-height: 250px;
+    width: 100%;
+    border-radius: 10px;
+    filter: brightness(80%)
+}
+
+.destination .location {
+    position: absolute;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.city {
+    font-family: 'Dancing Script';
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.country {
+    font-size: 0.9rem;
+    color: rgb(203, 199, 199);
 }
 
 section, footer {
@@ -155,4 +177,8 @@ nav > a {
 
 h3 {
     padding: 10px;
+}
+
+footer {
+    background-color: #ffc107;
 }
