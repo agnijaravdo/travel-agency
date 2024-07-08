@@ -18,19 +18,22 @@
 
 <body>
   <header>
-    <div>
-      <form method="get">
+    <div id="top-navigation">
+      <form method="get" class="top-navigation-item">
         <img src="./icons/search-white.svg" alt="Search">
-        <input type="text" placeholder="Search">
+        <input type="search" placeholder="Search" aria-label="Search">
       </form>
-      <img src="./icons/globe-white.svg" alt="Logo">
-      <div>
-        <img src="./icons/three-bars-white.svg" alt="Menu">
+      <div class="top-navigation-item">
+        <img src="./icons/globe-white.svg" alt="Logo">
+      </div>
+      <div class="top-navigation-item">
+        <img src="./icons/three-bars-white.svg" alt="Menu" class="top-navigation-item">
       </div>
     </div>
+    <hr>
     <div>
-      <div>Year long travel</div>
-      <h1>
+      <div id="small-title">Year long travel</div>
+      <h1 id="main-title">
         Book your next<br>
         destination
       </h1>
@@ -94,32 +97,34 @@
         tackle the rugged trails of the coastal cliffs.
       </p>
     </div>
-    <div>
-      <img src="./images/destinations/paris.jpg" alt="Paris">
-      <div>
-        <strong>Paris</strong>
-        <div>France</div>
+    <div class="destinations">
+      <div class="destination">
+        <img src="./images/destinations/paris.jpg" alt="Paris">
+        <div>
+          <strong>Paris</strong>
+          <div>France</div>
+        </div>
       </div>
-    </div>
-    <div>
-      <img src="./images/destinations/san-francisco.jpg" alt="San Francisco">
-      <div>
-        <strong>San Francisco</strong>
-        <div>United States</div>
+      <div class="destination">
+        <img src="./images/destinations/san-francisco.jpg" alt="San Francisco">
+        <div>
+          <strong>San Francisco</strong>
+          <div>United States</div>
+        </div>
       </div>
-    </div>
-    <div>
-      <img src="./images/destinations/sydney.jpg" alt="Sydney">
-      <div>
-        <strong>Sydney</strong>
-        <div>Australia</div>
+      <div class="destination">
+        <img src="./images/destinations/sydney.jpg" alt="Sydney">
+        <div>
+          <strong>Sydney</strong>
+          <div>Australia</div>
+        </div>
       </div>
-    </div>
-    <div>
-      <img src="./images/destinations/tokyo.jpg" alt="Tokyo">
-      <div>
-        <strong>Tokyo</strong>
-        <div>Japan</div>
+      <div class="destination">
+        <img src="./images/destinations/tokyo.jpg" alt="Tokyo">
+        <div>
+          <strong>Tokyo</strong>
+          <div>Japan</div>
+        </div>
       </div>
     </div>
   </section>

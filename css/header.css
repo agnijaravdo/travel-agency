@@ -42,8 +42,8 @@ header {
 .input-item label {
     display: block;
     color: white;
-    text-shadow: 2px 2px 4px black;
     margin-bottom: 5px;
+    font-weight: 200;
 }
 
 button {
@@ -73,7 +73,6 @@ button {
 
     button {
         margin-top: 20px;
-        width: 150%;
     }
 
     .input-item-row {
@@ -86,6 +85,7 @@ button {
     .form-items {
         flex-direction: column;
         align-items: center;
+        padding: 10px;
     }
 
     .input-item {
@@ -99,4 +99,50 @@ button {
     .input-item-row .input-item:last-child {
         margin-right: 0;
     }
+}
+
+#top-navigation {
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: space-between;
+}
+
+.top-navigation-item {
+    padding: 10px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 200;
+
+}
+
+#small-title {
+    color: white;
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: 600;
+}
+
+#main-title {
+    color: white;
+    font-size: 4.2rem;
+    text-shadow: 2px 2px rgb(84, 83, 83);
+    font-weight: 600;
+}
+
+hr {
+    color: white;
+}
+
+.destinations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.destination img {
+    width: 100%;
 }
