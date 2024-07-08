@@ -32,7 +32,12 @@ header > .container-md > #main-content {
     justify-content: space-between;
 }
 
-#top-navigation {
+.top-nav a {
+    display: inline;
+    margin: 0 10px;
+}
+
+#top-navigation  > .wrap {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 10px;
@@ -41,11 +46,17 @@ header > .container-md > #main-content {
 .logo {
     display: flex;
     justify-content: center;
+    padding-top: 10px;
 }
     
 .menu {
     display: flex;
     justify-content: flex-end;
+    padding-top: 10px;
+}
+
+#sign-in {
+    border-radius: 25px;
 }
 
 body {
@@ -58,6 +69,8 @@ body {
     background-color:rgba(0,0,0,0);
     border:none;
     caret-color: white;
+    padding-top: 10px;
+
 }
 
 #search-bar::placeholder {
@@ -155,6 +168,7 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
+        align-items: center
     }
 }
 
@@ -183,6 +197,10 @@ body {
 
     .destination img {
         max-height: 250px
+    }
+
+    #newsletter {
+        padding-top: 30px;
     }
 }
 
@@ -254,10 +272,6 @@ footer {
 }
 
 h2 {
-    padding-top: 30px;
-}
-
-#newsletter {
     padding-top: 30px;
 }
 
