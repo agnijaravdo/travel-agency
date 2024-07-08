@@ -1,13 +1,63 @@
 header {
     background: url('/travel-agency/images/header.jpg') center / cover no-repeat;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
     height: 80vh;
     color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    flex-grow: 1;
 }
 
 .form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-direction: column;
+}
+
+#header-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#top-navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+    
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+#search-bar {
+    background-color:rgba(0,0,0,0);
+    border:none;
+    caret-color: white;
+}
+
+#search-bar::placeholder {
+    color: white;
+    font-weight: 100;
 }
 
 .form-items {
@@ -63,7 +113,9 @@ header {
     .form-items {
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        align-items: end;
+        margin-bottom: 20px;
+        width: 100vh;
     }
 
     .input-item {
@@ -84,11 +136,15 @@ header {
     .form-items {
         flex-direction: column;
         align-items: center;
-        padding: 10px;
+        padding: 20px;
     }
 
     .input-item {
         width: 100%;
+    }
+
+    button {
+        margin-bottom: 10px;
     }
 
     .input-item-row .input-item {
@@ -100,21 +156,6 @@ header {
     }
 }
 
-#top-navigation {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.top-navigation-item {
-    padding: 10px;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 200;
-}
-
 #small-title {
     text-transform: uppercase;
     font-size: small;
@@ -122,7 +163,7 @@ body {
 }
 
 #main-title {
-    font-size: 4.2rem;
+    font-size: 4rem;
     text-shadow: 2px 2px rgb(84, 83, 83);
     font-weight: 600;
 }
@@ -132,6 +173,7 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 10px;
+    padding: 20px 0;
 }
 
 .destination {
@@ -140,11 +182,10 @@ body {
 
 .destination img {
     width: 100%;
-    object-fit: cover;
+    object-fit:cover;
     max-height: 250px;
     width: 100%;
     border-radius: 10px;
-    filter: brightness(80%)
 }
 
 .destination .location {
