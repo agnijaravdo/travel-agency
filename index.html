@@ -18,58 +18,66 @@
 
 <body>
   <header>
-    <div id="top-navigation">
-      <form method="get" class="search-bar input-group">
-        <img src="./icons/search-white.svg" alt="Search">
-        <input id="search-bar" type="search" class="form-control" placeholder="Search" aria-label="Search">
-      </form>
-      <div class="logo">
-        <img src="./icons/globe-white.svg" alt="Logo">
-      </div>
-      <div class="menu">
-        <img src="./icons/three-bars-white.svg" alt="Menu" class="top-navigation-item">
-      </div>
-    </div>
-    <hr>
-    <div id="main-content">
-      <div id="small-title">Year long travel</div>
-      <h1 id="main-title">
-        Book your next<br>
-        destination
-      </h1>
-      <form class="form">
-        <div class="form-items">
-          <div class="input-item">
-            <label>Destination</label>
-            <select class="form-select" aria-label="Destination selection" id="destination" name="destination">
-              <option value="none" selected disabled hidden>Destination</option>
-              <option value="paris">Paris</option>
-              <option value="tokyo">Tokyo</option>
-              <option value="sydney">Sydney</option>
-              <option value="sanFrancisco">San Francisco</option>
-            </select>
-          </div>
-          <div class="input-item-row">
-            <div class="input-item">
-              <label for="dateFrom">From</label>
-              <input type="date" class="form-control" id="dateFrom" name="dateFrom">
-            </div>
-            <div class="input-item">
-              <label for="dateTo">To</label>
-              <input type="date" class="form-control" id="dateTo" name="dateTo">
-            </div>
-          </div>
-          <div class="input-item">
-            <label for="guests">Guests</label>
-            <input type="number" class="form-control" id="guests" name="guests">
-          </div>
-          <div class="input-item">
-            <button class="btn btn-warning" type="submit" id="destination-button">
-              <img src="./icons/arrow-right.svg" alt="arrow">
-            </button>
-          </div>
+    <div class="container-md">
+      <div id="top-navigation">
+        <form method="get" class="search-bar input-group">
+          <img src="./icons/search-white.svg" alt="Search">
+          <input id="search-bar" type="search" class="form-control" placeholder="Search" aria-label="Search">
+        </form>
+        <div class="logo">
+          <img src="./icons/globe-white.svg" alt="Logo">
         </div>
-      </form>
+        <div class="menu">
+          <nav class="d-none d-md-block">
+            <a href="">Destinations</a>
+            <a href="" class="btn btn-light">Sign in</a>
+          </nav>
+          <img class="d-md-none" src="./icons/three-bars-white.svg" alt="Menu" class="top-navigation-item">
+        </div>
+      </div>
+      <hr>
+      <div id="main-content">
+        <div id="content-text">
+          <div id="small-title">Year long travel</div>
+          <h1 id="main-title">
+            Book your next<br>
+            destination
+          </h1>
+        </div>
+        <form class="form">
+          <div class="form-items">
+            <div class="input-item">
+              <label>Destination</label>
+              <select class="form-select" aria-label="Destination selection" id="destination" name="destination">
+                <option value="none" selected disabled hidden>Destination</option>
+                <option value="paris">Paris</option>
+                <option value="tokyo">Tokyo</option>
+                <option value="sydney">Sydney</option>
+                <option value="sanFrancisco">San Francisco</option>
+              </select>
+            </div>
+            <div class="input-item-row">
+              <div class="input-item">
+                <label for="dateFrom">From</label>
+                <input type="date" class="form-control" id="dateFrom" name="dateFrom">
+              </div>
+              <div class="input-item">
+                <label for="dateTo">To</label>
+                <input type="date" class="form-control" id="dateTo" name="dateTo">
+              </div>
+            </div>
+            <div class="input-item">
+              <label for="guests">Guests</label>
+              <input type="number" class="form-control" id="guests" name="guests">
+            </div>
+            <div class="input-item">
+              <button class="btn btn-warning" type="submit" id="destination-button">
+                <img src="./icons/arrow-right.svg" alt="arrow">
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   </header>
   <section>
@@ -97,57 +105,62 @@
         tackle the rugged trails of the coastal cliffs.
       </p>
     </div>
-    <div class="destinations">
-      <div class="destination">
-        <img src="./images/destinations/paris.jpg" alt="Paris">
-        <div class="location">
-          <strong class="city">Paris</strong>
-          <div class="country">France</div>
+    <div class="container-md">
+      <div class="destinations">
+        <div class="destination">
+          <img src="./images/destinations/paris.jpg" alt="Paris">
+          <div class="location">
+            <strong class="city">Paris</strong>
+            <div class="country">France</div>
+          </div>
         </div>
-      </div>
-      <div class="destination">
-        <img src="./images/destinations/san-francisco.jpg" alt="San Francisco">
-        <div class="location">
-          <strong class="city">San Francisco</strong>
-          <div class="country">United States</div>
+        <div class="destination">
+          <img src="./images/destinations/san-francisco.jpg" alt="San Francisco">
+          <div class="location">
+            <strong class="city">San Francisco</strong>
+            <div class="country">United States</div>
+          </div>
         </div>
-      </div>
-      <div class="destination">
-        <img src="./images/destinations/sydney.jpg" alt="Sydney">
-        <div class="location">
-          <strong class="city">Sydney</strong>
-          <div class="country">Australia</div>
+        <div class="destination">
+          <img src="./images/destinations/sydney.jpg" alt="Sydney">
+          <div class="location">
+            <strong class="city">Sydney</strong>
+            <div class="country">Australia</div>
+          </div>
         </div>
-      </div>
-      <div class="destination">
-        <img src="./images/destinations/tokyo.jpg" alt="Tokyo">
-        <div class="location">
-          <strong class="city">Tokyo</strong>
-          <div class="country">Japan</div>
+        <div class="destination">
+          <img src="./images/destinations/tokyo.jpg" alt="Tokyo">
+          <div class="location">
+            <strong class="city">Tokyo</strong>
+            <div class="country">Japan</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <footer>
-    <h3>Links</h3>
-    <nav>
-      <a href="">Home</a>
-      <a href="">Destinations</a>
-      <a href="">About</a>
-      <a href="">Contact</a>
-    </nav>
-    <div>
-      <h3>Newsletter</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-        euismod, nisl nec tincidunt dapibus, magna libero fermentum augu.
-      </p>
+  <footer id="footer">
+    <div class="container-md">
+      <h3>Links</h3>
+      <nav>
+        <a href="">Home</a>
+        <a href="">Destinations</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+      </nav>
+      <div>
+        <h3>Newsletter</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+          euismod, nisl nec tincidunt dapibus, magna libero fermentum augu.
+        </p>
+      </div>
+      <form class="input-group">
+        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+        <button type="submit" class="btn btn-success" id="subscribe-button">Subscribe <img
+            src="./icons/arrow-right-white.svg" alt="arrow">
+        </button>
+      </form>
     </div>
-    <form class="input-group">
-      <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-      <button type="submit" class="btn btn-success">Subscribe <img src="./icons/arrow-right-white.svg" alt="arrow">
-      </button>
-    </form>
   </footer>
 </body>
 

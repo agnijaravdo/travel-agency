@@ -3,11 +3,16 @@ header {
     box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
     height: 80vh;
     color: white;
-    display: flex;
-    flex-direction: column;
 }
 
-#main-content {
+header > .container-md {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+header > .container-md > #main-content {
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -129,6 +134,27 @@ body {
     .input-item-row {
         width: auto;
     }
+
+    .container-md > .destinations {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .destination .location {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .destination img {
+        max-height: 400px
+    }
+
+    footer > .container-md {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
 }
 
 /* small screens */
@@ -153,6 +179,10 @@ body {
 
     .input-item-row .input-item:last-child {
         margin-right: 0;
+    }
+
+    .destination img {
+        max-height: 250px
     }
 }
 
@@ -181,14 +211,13 @@ body {
 }
 
 .destination img {
-    width: 100%;
-    object-fit:cover;
-    max-height: 250px;
+    object-fit: cover;
     width: 100%;
     border-radius: 10px;
 }
 
 .destination .location {
+    display: block;
     position: absolute;
     color: white;
     text-align: center;
@@ -216,10 +245,10 @@ nav > a {
     display: block;
 }
 
-h3 {
-    padding: 10px;
-}
-
 footer {
     background-color: #ffc107;
+}
+
+h2, h3 {
+    padding-top: 30px;
 }
