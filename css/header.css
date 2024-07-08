@@ -46,7 +46,7 @@ header {
     font-weight: 200;
 }
 
-button {
+#destination-button {
     width: 100%;
     height: 40px;
     border-radius: 20px;
@@ -102,9 +102,8 @@ button {
 }
 
 #top-navigation {
-    display: flex;
-    flex: 0 0 auto;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .top-navigation-item {
@@ -115,7 +114,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.1rem;
     font-weight: 200;
-
 }
 
 #small-title {
@@ -145,4 +143,16 @@ hr {
 
 .destination img {
     width: 100%;
+}
+
+section, footer {
+    padding: 10px;
+}
+
+nav > a {
+    display: block;
+}
+
+h3 {
+    padding: 10px;
 }

@@ -19,9 +19,9 @@
 <body>
   <header>
     <div id="top-navigation">
-      <form method="get" class="top-navigation-item">
+      <form method="get" class="top-navigation-item input-group">
         <img src="./icons/search-white.svg" alt="Search">
-        <input type="search" placeholder="Search" aria-label="Search">
+        <input type="search" class="form-control" placeholder="Search" aria-label="Search">
       </form>
       <div class="top-navigation-item">
         <img src="./icons/globe-white.svg" alt="Logo">
@@ -41,7 +41,7 @@
         <div class="form-items">
           <div class="input-item">
             <label>Destination</label>
-            <select id="destination" name="destination">
+            <select class="form-select" aria-label="Destination selection" id="destination" name="destination">
               <option value="none" selected disabled hidden>Destination</option>
               <option value="paris">Paris</option>
               <option value="tokyo">Tokyo</option>
@@ -52,19 +52,19 @@
           <div class="input-item-row">
             <div class="input-item">
               <label for="dateFrom">From</label>
-              <input type="date" id="dateFrom" name="dateFrom">
+              <input type="date" class="form-control" id="dateFrom" name="dateFrom">
             </div>
             <div class="input-item">
               <label for="dateTo">To</label>
-              <input type="date" id="dateTo" name="dateTo">
+              <input type="date" class="form-control" id="dateTo" name="dateTo">
             </div>
           </div>
           <div class="input-item">
             <label for="guests">Guests</label>
-            <input type="number" id="guests" name="guests">
+            <input type="number" class="form-control" id="guests" name="guests">
           </div>
           <div class="input-item">
-            <button class="btn btn-warning" type="submit">
+            <button class="btn btn-warning" type="submit" id="destination-button">
               <img src="./icons/arrow-right.svg" alt="arrow">
             </button>
           </div>
@@ -143,8 +143,8 @@
         euismod, nisl nec tincidunt dapibus, magna libero fermentum augu.
       </p>
     </div>
-    <form>
-      <input type="email" id="email" name="email" placeholder="Email">
+    <form class="input-group">
+      <input type="email" class="form-control" id="email" name="email" placeholder="Email">
       <button type="submit" class="btn btn-success">Subscribe <img src="./icons/arrow-right-white.svg" alt="arrow">
       </button>
     </form>
