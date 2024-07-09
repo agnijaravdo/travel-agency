@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travel Agency: Destination Paris</title>
+    <meta name="description" content="Travel agency: Destination Paris">
+    <meta name="author" content="You">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&family=Montserrat:400,700&&display=swap"
+        rel="stylesheet">
+    <link href="./css/header.css" rel="stylesheet" type="text/css">
+    <link href="./css/footer.css" rel="stylesheet" type="text/css">
+    <link href="./css/contact-us.css" rel="stylesheet" type="text/css">
+    <link href="./css/destination-paris.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div class="container-md">
+            <div id="top-navigation">
+                <div class="container-md wrap">
+                    <form method="get" class="search-bar input-group">
+                        <img src="./icons/search-white.svg" alt="Search">
+                        <input id="search-bar" type="search" class="form-control" placeholder="Search"
+                            aria-label="Search">
+                    </form>
+                    <div class="logo">
+                        <a href="index.html" title="Logo"><img src="./icons/globe-white.svg" alt="Logo"></a>
+                    </div>
+                    <div class="menu">
+                        <nav class="top-nav d-none d-md-block">
+                            <a href="destinations-gallery.html" title="Destinations gallery">Destinations</a>
+                            <a href="contact-us.html" title="Contact Us page" class="btn btn-light"
+                                id="contact-us">Contact</a>
+                        </nav>
+                        <img class="d-md-none" src="./icons/three-bars-white.svg" alt="Menu">
+                    </div>
+                </div>
+                <h1 id="main-title">
+                    Paris
+                </h1>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container-md" id="paris-info">
+            <div>
+                <p>
+                    Paris, often called the City of Light, is a treasure trove of history, art, and culture. Wandering
+                    through its streets, one can’t miss the majestic Eiffel Tower, the Gothic beauty of Notre-Dame
+                    Cathedral, and the sprawling art collection housed in the Louvre Museum. From the charming cafés
+                    lining the boulevards to the serene Seine River that cuts through the city, Paris offers a
+                    picturesque setting that enchants visitors time and again.
+                </p>
+                <p>
+                    Food lovers will find Paris a haven for culinary delights. Start your day with a freshly baked
+                    croissant and a rich espresso from a local café. For lunch, savor classic French dishes like boeuf
+                    bourguignon or quiche lorraine at a quaint bistro. Make sure to save room for dessert – whether it's
+                    a delicate macaron, a creamy éclair, or a classic crêpe, the city's patisseries certainly impress.
+                    Exploring the local markets is also a treat, offering fresh produce, artisanal cheeses, and
+                    delicious charcuterie.
+                </p>
+                <p>
+                    Art and culture enthusiasts will find endless opportunities to be inspired in Paris. Visit renowned
+                    museums like the Musée d'Orsay for a dose of Impressionist masterpieces or the Centre Pompidou for
+                    contemporary art. Walk through historic neighborhoods like Montmartre, famed for its bohemian past,
+                    or the Marais, brimming with chic boutiques and historic mansions. As night falls, enjoy the vibrant
+                    Parisian nightlife in cozy wine bars, bustling brasseries, and theaters showcasing everything from
+                    classic operas to contemporary performances.
+                </p>
+            </div>
+        </div>
+        <div class="container-md">
+            <h2>Book your stay in Paris</h2>
+            <form class="form">
+                <div class="form-items" id="form-paris">
+                    <div class="input-item-row">
+                        <div class="input-item">
+                            <label for="dateFrom">From</label>
+                            <input type="date" class="form-control" id="dateFrom" name="dateFrom" aria-label="From"
+                                required>
+                        </div>
+                        <div class="input-item">
+                            <label for="dateTo">To</label>
+                            <input type="date" class="form-control" id="dateTo" name="dateTo" aria-label="From"
+                                required>
+                        </div>
+                    </div>
+                    <div class="input-item">
+                        <label for="guests">Guests</label>
+                        <input type="number" class="form-control" id="guests" name="guests" aria-label="Guests number"
+                            max="10" min="1" required value="2">
+                    </div>
+                    <div class="input-item">
+                        <button class="btn btn-warning" type=" submit" id="form-button">
+                            <img src="./icons/search-black.svg" alt="arrow" class="icon">
+                            <span class="text">Search</span>
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a href="destinations-gallery.html" class="btn btn-dark" id="back-to-gallery">← Go Back To
+                        Destinations Gallery</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container-md">
+            <div>
+                <h3>Links</h3>
+                <nav>
+                    <a href="index.html" title="Home page">Home</a>
+                    <a href="destinations-gallery.html" title="Destinations gallery">Destinations</a>
+                    <a href="" title="About page">About</a>
+                    <a href="contact-us.html" title="Contact page">Contact</a>
+                </nav>
+            </div>
+            <div>
+                <h3 id="newsletter">Newsletter</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                    euismod, nisl nec tincidunt dapibus, magna libero fermentum augu.
+                </p>
+                <form class="input-group">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email"
+                        autocomplete="email" required>
+                    <button type="submit" class="btn btn-success" id="subscribe-button">Subscribe <img
+                            src="./icons/arrow-right-white.svg" alt="arrow">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

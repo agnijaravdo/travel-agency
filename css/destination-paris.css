@@ -1,0 +1,30 @@
+header {
+    background: url('/travel-agency/images/paris-header.jpg') center / cover no-repeat;
+    height: 60vh;
+}
+
+#main-title {
+    align-items: end;
+    height: 50vh;
+}
+
+#paris-info {
+    margin: 20px auto;
+}
+
+#form-paris {
+    border: 1px solid var(--black-color);
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.icon {
+    margin-right: 8px;
+}
+
+#back-to-gallery {
+    margin: 20px auto;
+    justify-content: center;
+    display: flex;
+    width: 60%;
+}
