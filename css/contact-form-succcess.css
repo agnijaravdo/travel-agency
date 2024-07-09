@@ -1,0 +1,11 @@
+#check-image {
+    width: 30vh;
+}
+
+#contact-success {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}

@@ -18,72 +18,74 @@
 </head>
 
 <body>
-    <header>
-        <div class="container-md">
-            <div id="top-navigation">
-                <div class="container-md wrap">
-                    <form method="get" class="search-bar input-group">
-                        <img src="./icons/search-white.svg" alt="Search">
-                        <input id="search-bar" type="search" class="form-control" placeholder="Search"
-                            aria-label="Search">
-                    </form>
-                    <div class="logo">
-                        <a href="index.html"><img src="./icons/globe-white.svg" alt="Logo"></a>
-                    </div>
-                    <div class="menu">
-                        <nav class="top-nav d-none d-md-block">
-                            <a href="index.html#destinations" title="Destinations block">Destinations</a>
-                            <a href="contact-us.html" title="Contact Us page" class="btn btn-light"
-                                id="contact-us">Contact</a>
-                        </nav>
-                        <img class="d-md-none" src="./icons/three-bars-white.svg" alt="Menu">
+    <div class="wrapper">
+        <header>
+            <div class="container-md">
+                <div id="top-navigation">
+                    <div class="container-md wrap">
+                        <form method="get" class="search-bar input-group">
+                            <img src="./icons/search-white.svg" alt="Search">
+                            <input id="search-bar" type="search" class="form-control" placeholder="Search"
+                                aria-label="Search">
+                        </form>
+                        <div class="logo">
+                            <a href="index.html"><img src="./icons/globe-white.svg" alt="Logo"></a>
+                        </div>
+                        <div class="menu">
+                            <nav class="top-nav d-none d-md-block">
+                                <a href="index.html#destinations" title="Destinations block">Destinations</a>
+                                <a href="contact-us.html" title="Contact Us page" class="btn btn-light"
+                                    id="contact-us">Contact</a>
+                            </nav>
+                            <img class="d-md-none" src="./icons/three-bars-white.svg" alt="Menu">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <section id="contact">
-        <div class="container-md">
-            <h2>Contact Us</h2>
-            <p>Please fill this form to contact us and we will get back to you as soon as possible</p>
-            <form class="contact-form">
-                <div class="contact-form-input" id="full-name">
-                    <div class="contact-form-grid">
-                        <div class="contact-form-input">
-                            <label for="fname" class="col-form-label">First Name</label>
-                            <input type="text" class="form-control" id="fname" name="fname"
-                                placeholder="Your First Name" aria-label="First Name Input" required>
-                        </div>
-                        <div class="contact-form-input">
-                            <label for="lname" class="col-form-label">Last name</label>
-                            <input type="text" class="form-control" id="lname" name="lname" placeholder="Your Last Name"
-                                aria-label="Last Name Input" required>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form-input" id="email-and-phone">
-                    <div class="contact-form-grid">
-                        <div class="contact-form-input">
-                            <label for="input-email" class="col-form-label">Email</label>
-                            <input type="email" class="form-control" id="input-email" name="input-email"
-                                placeholder="Your Email" autocomplete="email" aria-label="Email Input" required>
-                        </div>
-                        <div class="contact-form-input">
-                            <label for="phoneNumber" class="col-form-label">Phone Number</label>
-                            <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber"
-                                placeholder="12345678" pattern="[0-9+]*" aria-label="Phone Number Input" required>
+        </header>
+        <section id="contact">
+            <div class="container-md">
+                <h2>Contact Us</h2>
+                <p>Please fill this form to contact us</p>
+                <form class="contact-form" action="contact-form-success.html">
+                    <div class="contact-form-input" id="full-name">
+                        <div class="contact-form-grid">
+                            <div class="contact-form-input">
+                                <label for="fname" class="col-form-label">First Name</label>
+                                <input type="text" class="form-control" id="fname" name="fname"
+                                    placeholder="Your First Name" aria-label="First Name Input" required>
+                            </div>
+                            <div class="contact-form-input">
+                                <label for="lname" class="col-form-label">Last name</label>
+                                <input type="text" class="form-control" id="lname" name="lname"
+                                    placeholder="Your Last Name" aria-label="Last Name Input" required>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="contact-form-input" id="area-message">
-                    <label for="message" class="col-form-label">Message</label>
-                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message"
-                        aria-label="Message Input" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-dark">Send Message</button>
-            </form>
-        </div>
-    </section>
+                    <div class="contact-form-input" id="email-and-phone">
+                        <div class="contact-form-grid">
+                            <div class="contact-form-input">
+                                <label for="input-email" class="col-form-label">Email</label>
+                                <input type="email" class="form-control" id="input-email" name="input-email"
+                                    placeholder="Your Email" autocomplete="email" aria-label="Email Input" required>
+                            </div>
+                            <div class="contact-form-input">
+                                <label for="phoneNumber" class="col-form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber"
+                                    placeholder="12345678" pattern="[0-9+]*" aria-label="Phone Number Input" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-input" id="area-message">
+                        <label for="message" class="col-form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message"
+                            aria-label="Message Input" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </div>
     <footer id="footer">
         <div class="container-md">
             <div>

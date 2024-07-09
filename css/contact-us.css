@@ -1,10 +1,6 @@
 header {
     box-shadow: 0 0 200px rgb(0 0 0 / 70%) inset;
-    height: 10vh;
-}
-
-#top-navigation  > .wrap {
-    border-bottom: none
+    height: 15vh;
 }
 
 .form-control::placeholder {
