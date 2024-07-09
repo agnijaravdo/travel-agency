@@ -30,8 +30,8 @@
           </div>
           <div class="menu">
             <nav class="top-nav d-none d-md-block">
-              <a href="">Destinations</a>
-              <a href="" class="btn btn-light" id="sign-in">Sign in</a>
+              <a href="#destinations" title="Destinations block">Destinations</a>
+              <a href="" title="Sign in page" class="btn btn-light" id="sign-in">Sign in</a>
             </nav>
             <img class="d-md-none" src="./icons/three-bars-white.svg" alt="Menu">
           </div>
@@ -62,16 +62,16 @@
               <div class="input-item-row">
                 <div class="input-item">
                   <label for="dateFrom">From</label>
-                  <input type="date" class="form-control" id="dateFrom" name="dateFrom">
+                  <input type="date" class="form-control" id="dateFrom" name="dateFrom" aria-label="From">
                 </div>
                 <div class="input-item">
                   <label for="dateTo">To</label>
-                  <input type="date" class="form-control" id="dateTo" name="dateTo">
+                  <input type="date" class="form-control" id="dateTo" name="dateTo" aria-label="From">
                 </div>
               </div>
               <div class="input-item">
                 <label for="guests">Guests</label>
-                <input type="number" class="form-control" id="guests" name="guests">
+                <input type="number" class="form-control" id="guests" name="guests" aria-label="Guests number">
               </div>
               <div class="input-item">
                 <button class="btn btn-warning" type="submit" id="destination-button">
@@ -84,7 +84,7 @@
       </div>
     </div>
   </header>
-  <section>
+  <section id="destinations">
     <div class="container-md">
       <h2>Destinations</h2>
       <div>
@@ -149,10 +149,10 @@
       <div>
         <h3>Links</h3>
         <nav>
-          <a href="">Home</a>
-          <a href="">Destinations</a>
-          <a href="">About</a>
-          <a href="">Contact</a>
+          <a href="" title="Home page">Home</a>
+          <a href="#destinations" title="Destinations block">Destinations</a>
+          <a href="" title="About page">About</a>
+          <a href="" title="Contact page">Contact</a>
         </nav>
       </div>
       <div>
@@ -162,7 +162,7 @@
           euismod, nisl nec tincidunt dapibus, magna libero fermentum augu.
         </p>
         <form class="input-group">
-          <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+          <input type="email" class="form-control" id="email" name="email" placeholder="Email" autocomplete="email">
           <button type="submit" class="btn btn-success" id="subscribe-button">Subscribe <img
               src="./icons/arrow-right-white.svg" alt="arrow">
           </button>

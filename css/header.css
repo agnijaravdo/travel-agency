@@ -60,7 +60,7 @@ header > .container-md > #main-content {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
     font-size: 1.1rem;
     font-weight: 200;
 }
@@ -245,7 +245,7 @@ body {
 }
 
 .city {
-    font-family: 'Dancing Script';
+    font-family: 'Dancing Script', 'Comic Sans MS', cursive;
     font-size: 2rem;
     font-weight: 800;
 }
