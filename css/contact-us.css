@@ -1,6 +1,6 @@
 header {
     box-shadow: 0 0 200px rgb(0 0 0 / 70%) inset;
-    height: 15vh;
+    height: 20vh;
 }
 
 .form-control::placeholder {
@@ -9,7 +9,7 @@ header {
 
 #contact > .container-md {
     max-width: 600px;
-    margin: auto;
+    margin: 20px auto;
 }
 
 .contact-form-input {
@@ -33,4 +33,11 @@ header {
     width: 50%;
     padding: 10px;
     margin: 20px auto;
+}
+
+#main-title {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 10vh;
 }
