@@ -1,0 +1,40 @@
+header {
+    box-shadow: 0 0 200px rgb(0 0 0 / 70%) inset;
+    height: 10vh;
+}
+
+#top-navigation  > .wrap {
+    border-bottom: none
+}
+
+.form-control::placeholder {
+    font-weight: 300;
+}
+
+#contact > .container-md {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.contact-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+}
+
+.contact-form button {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin: 20px auto;
+}
