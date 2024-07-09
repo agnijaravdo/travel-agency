@@ -1,0 +1,38 @@
+@import url('variables.css');
+
+footer nav > a {
+    display: block;
+    color: var(--black-color);
+}
+
+header nav > a {
+    display: block;
+    color: var(--white-color);
+}
+
+footer {
+    background-color: #ffc107;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#subscribe-button {
+    margin: 0
+}
+
+/* big screens */
+@media (width >= 768px) {
+    footer > .container-md {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        align-items: center
+    }
+}
+
+/* small screens */
+@media (width <= 767px) {
+    #newsletter {
+        padding-top: 30px;
+    }
+}

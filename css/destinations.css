@@ -1,0 +1,65 @@
+@import url('variables.css');
+
+.destinations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.destination {
+    position: relative;
+}
+
+.destination img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.destination .location {
+    display: block;
+    position: absolute;
+    color: var(--white-color);
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.city {
+    font-family: var(--font-family-secondary);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.country {
+    font-size: 0.9rem;
+    color: rgb(203 199 199);
+}
+
+/* big screens */
+@media (width >= 768px) {
+    .container-md > .destinations {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        padding: 60px 0;
+    }
+
+    .destination .location {
+        display: block;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;    }
+
+    .destination img {
+        max-height: none;
+    }
+}
+
+/* small screens */
+@media (width <= 767px) {
+    .destination img {
+        max-height: 250px
+    }
+}
