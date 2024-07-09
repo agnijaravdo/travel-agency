@@ -62,16 +62,17 @@
               <div class="input-item-row">
                 <div class="input-item">
                   <label for="dateFrom">From</label>
-                  <input type="date" class="form-control" id="dateFrom" name="dateFrom" aria-label="From">
+                  <input type="date" class="form-control" id="dateFrom" name="dateFrom" aria-label="From" required>
                 </div>
                 <div class="input-item">
                   <label for="dateTo">To</label>
-                  <input type="date" class="form-control" id="dateTo" name="dateTo" aria-label="From">
+                  <input type="date" class="form-control" id="dateTo" name="dateTo" aria-label="From" required>
                 </div>
               </div>
               <div class="input-item">
                 <label for="guests">Guests</label>
-                <input type="number" class="form-control" id="guests" name="guests" aria-label="Guests number">
+                <input type="number" class="form-control" id="guests" name="guests" aria-label="Guests number" max="10"
+                  min="1" required value="2">
               </div>
               <div class="input-item">
                 <button class="btn btn-warning" type="submit" id="destination-button">
@@ -162,7 +163,8 @@
           euismod, nisl nec tincidunt dapibus, magna libero fermentum augu.
         </p>
         <form class="input-group">
-          <input type="email" class="form-control" id="email" name="email" placeholder="Email" autocomplete="email">
+          <input type="email" class="form-control" id="email" name="email" placeholder="Email" autocomplete="email"
+            required>
           <button type="submit" class="btn btn-success" id="subscribe-button">Subscribe <img
               src="./icons/arrow-right-white.svg" alt="arrow">
           </button>
