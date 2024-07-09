@@ -1,8 +1,10 @@
+@import 'variables.css';
+
 header {
     background: url('/travel-agency/images/header.jpg') center / cover no-repeat;
     box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
     height: 80vh;
-    color: white;
+    color: var(--white-color);
 }
 
 header > .container-md {
@@ -60,7 +62,7 @@ header > .container-md > #main-content {
 }
 
 body {
-    font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+    font-family: var(--font-family-primary);
     font-size: 1.1rem;
     font-weight: 200;
 }
@@ -68,13 +70,13 @@ body {
 #search-bar {
     background-color:rgba(0,0,0,0);
     border:none;
-    caret-color: white;
+    caret-color: var(--white-color);
     padding-top: 10px;
 
 }
 
 #search-bar::placeholder {
-    color: white;
+    color: var(--white-color);
     font-weight: 100;
 }
 
@@ -237,7 +239,7 @@ body {
 .destination .location {
     display: block;
     position: absolute;
-    color: white;
+    color: var(--white-color);
     text-align: center;
     bottom: 0;
     width: 100%;
@@ -245,7 +247,7 @@ body {
 }
 
 .city {
-    font-family: 'Dancing Script', 'Comic Sans MS', cursive;
+    font-family: var(--font-family-secondary);
     font-size: 2rem;
     font-weight: 800;
 }
@@ -257,12 +259,12 @@ body {
 
 footer nav > a {
     display: block;
-    color: black;
+    color: var(--black-color);
 }
 
 header nav > a {
     display: block;
-    color: white;
+    color: var(--white-color);
 }
 
 footer {
