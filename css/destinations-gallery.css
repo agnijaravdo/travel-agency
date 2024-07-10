@@ -1,3 +1,5 @@
+@import url('variables.css');
+
 .destinations {
     padding: 20px;
     gap: 1rem;
@@ -35,7 +37,7 @@
 
 .overlay-content {
     text-align: center;
-    color: white;
+    color: var(--white-color);
     font-size: 1.2rem;
     width: 80%;
     word-wrap: break-word;
