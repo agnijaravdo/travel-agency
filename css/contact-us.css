@@ -1,6 +1,6 @@
 header {
     box-shadow: 0 0 200px rgb(0 0 0 / 70%) inset;
-    height: 20vh;
+    height: 30vh;
 }
 
 .form-control::placeholder {
@@ -36,8 +36,9 @@ header {
 }
 
 #main-title {
-    align-items: center;
+    align-items: end;
     justify-content: center;
+    padding-bottom: 20px;
     display: flex;
-    height: 10vh;
+    height: 20vh;
 }
