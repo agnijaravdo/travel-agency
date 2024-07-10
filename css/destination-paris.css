@@ -1,5 +1,5 @@
 header {
-    background: url('/travel-agency/images/paris-header.jpg') center / cover no-repeat;
+    background: url('../images/paris-header.jpg') center / cover no-repeat;
     height: 60vh;
 }
 
