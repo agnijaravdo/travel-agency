@@ -7,7 +7,7 @@ The project can be viewed here: https://agnijaravdo.github.io/travel-agency/
 ## Features
 
 - [**Landing Page**](https://agnijaravdo.github.io/travel-agency/index.html) - Homepage with a booking form, description and vibrant destination images.
-- [**Destinations Page**](https://agnijaravdo.github.io/travel-agency/destinations-gallery.html) - Page showcasing popular destinations with images and possibility to on them click for more details.
+- [**Destinations Page**](https://agnijaravdo.github.io/travel-agency/destinations-gallery.html) - Page showcasing popular destinations with images and possibility to click on them for more details.
 - [**Single Destination Page**](https://agnijaravdo.github.io/travel-agency/destination-paris.html) - Page with detailed information about a single destination, including images, description and booking form.
-- [**Contact Page**](https://agnijaravdo.github.io/travel-agency/contact-us.html) - Page with contact form.
+- [**Contact Page**](https://agnijaravdo.github.io/travel-agency/contact-us.html) - Page with contact form and form validations.
 - [**Contact Page Success**](https://agnijaravdo.github.io/travel-agency/contact-form-success.html) - Page displayed after successful form submission.
