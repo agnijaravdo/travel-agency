@@ -21,7 +21,7 @@ header {
     }
 
     .destination img {
-        max-height: 450px;
+        height: 450px;
     }
 }
 
